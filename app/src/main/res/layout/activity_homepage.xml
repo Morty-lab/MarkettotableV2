@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_person_24"
+        android:layout_margin="30dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/foods"
+        android:autoSizeTextType="uniform"
+        android:text="@string/app_name"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/dm_serif_display"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/recycle_foods"
+        android:layout_below="@id/foods"
+        />
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Receipt"
+    android:background="@color/secondary">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Order details"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/dm_serif_display"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:id="@+id/header"
+        />
+    
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/dm_serif_display"
+                android:text="Recepient"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:text="0"
+                android:fontFamily="@font/dm_serif_display"
+                android:layout_margin="20dp"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:id="@+id/recepient"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_below="@id/recepient"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/recepient"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/dm_serif_display"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:id="@+id/food_name"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="0"
+            android:fontFamily="@font/dm_serif_display"
+            android:layout_margin="20dp"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:layout_below="@id/recepient"
+            android:id="@+id/order_total"
+            />
+            
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="Delivery Fee"
+                android:fontFamily="@font/dm_serif_display"
+                android:layout_margin="20dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/order_total"
+                />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:text="0"
+                android:fontFamily="@font/dm_serif_display"
+                android:layout_margin="20dp"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:layout_below="@id/order_total"
+                android:id="@+id/delivery_fee"
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="Total"
+                android:fontFamily="@font/dm_serif_display"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/delivery_fee"
+
+                />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:text="0"
+                android:fontFamily="@font/dm_serif_display"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:layout_below="@id/delivery_fee"
+                android:id="@+id/grand_total"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thank you for transacting with us your meal is on the way. Please take a screenshot of this receipt to prove your purchase"
+                android:fontFamily="@font/dm_serif_display"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:layout_below="@id/grand_total"
+                android:layout_margin="20dp"/>
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

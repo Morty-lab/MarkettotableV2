@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "636930212995",
+    "project_id": "markettotable-af885",
+    "storage_bucket": "markettotable-af885.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636930212995:android:6b77de0e8c1ef3846287b6",
+        "android_client_info": {
+          "package_name": "com.example.markettotable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636930212995-ved4cj7bfijg9dti8lortol38ll0amgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzt-ZLiQVuTPxQFl8GKqizRcjUisBGuNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "636930212995-ved4cj7bfijg9dti8lortol38ll0amgu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
