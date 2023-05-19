@@ -22,9 +22,11 @@ public class TinyDb {
         return dataList;
     }
 
-    public void addToDataList(String name, String price, int path,int amount) {
-        dataList.add(new Foods(name,price,path,amount));
+    public void addToDataList(String name, String price, int path,Store store) {
+        dataList.add(new Foods(name,price,path,store));
     }
+
+
 }
 
 

@@ -4,13 +4,13 @@ public class Foods {
     String foodname;
     String price;
     int path;
-    int amount;
+    Store store;
 
-    public Foods(String foodname, String price, int path, int amount) {
+    public Foods(String foodname, String price, int path, Store store) {
         this.foodname = foodname;
         this.price = price;
         this.path = path;
-        this.amount = amount;
+        this.store = store;
     }
 
     public String getFoodname() {
@@ -37,11 +37,11 @@ public class Foods {
         this.path = path;
     }
 
-    public int getAmount() {
-        return amount;
+    public Store getStore() {
+        return store;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
+    public void setStore(Store store) {
+        this.store = store;
     }
 }

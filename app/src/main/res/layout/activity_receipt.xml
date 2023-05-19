@@ -89,7 +89,7 @@
             android:layout_below="@id/recepient"
             android:id="@+id/order_total"
             />
-            
+
 
             <TextView
                 android:layout_width="150dp"
